@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['test.py'],
-             pathex=['C:\\Users\\79232\\Desktop\\study\\Python\\1. Introduction. Python Basics\\2.Conditional constructions. Comparison operations\\exe из .py'],
+             pathex=['C:\\Users\\79232\\Desktop\\study\\Python\\1. Introduction. Python Basics\\2.Conditional constructions. Comparison operations\\!exe из .py'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -37,4 +37,4 @@ exe = EXE(pyz,
           disable_windowed_traceback=False,
           target_arch=None,
           codesign_identity=None,
-          entitlements_file=None , icon='C:\\Users\\79232\\Desktop\\study\\Python\\1. Introduction. Python Basics\\2.Conditional constructions. Comparison operations\\exe из .py\\icon.ico')
+          entitlements_file=None , icon='C:\\Users\\79232\\Desktop\\study\\Python\\1. Introduction. Python Basics\\2.Conditional constructions. Comparison operations\\!exe из .py\\icon.ico')
