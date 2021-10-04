@@ -1,3 +1,40 @@
+### Работа на лекции
+```bash
+#print('Hi, PY-35')
+#print('Hello python')
+#print(2 + 2)
+#print(2 - 1)
+#print(2 * 3)
+#print(2 ** 6) #возведение в степень **
+#print(11 / 4)
+#print(11 // 4) #получить целое число
+#print(11 % 4) #получаем остаток от деления
+#print(2 + 2 * 2)
+#print((2 + 2) * 2)
+#print(10 / 2 // 4)
+#my_name = 'Дмитрий'
+#print(my_name)
+#salary = '1000000 $'
+#print(salary)
+#my_teams = 'Google'
+#print(my_teams)
+#print('Hi,', 'my name is', my_name,',', 'I take salary', salary, 'in', my_teams)
+#print('Hi,', 'my name is', my_name, ',', 'I take salary', salary, 'in', my_teams, sep='!') # sep='Меняет разделитель'
+#print('Hi,', 'my name is', my_name)
+#
+#age = input('Сколько тебе лет?')
+#age = int(age)
+#print(type(age))
+#print(age)
+#print(age - 18)
+#age = input('Введите ваш возрост')
+#name = 'Dima'
+#print(name.find('i')) #Поиск по i в переменной
+#print(name + ' 12')
+#print('Hello' * 2) #Мультиплицирование
+
+```
+
 ### Задача 1
 ```python3
 # Say "Hello, World!" With Python
