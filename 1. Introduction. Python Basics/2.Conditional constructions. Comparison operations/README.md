@@ -181,67 +181,206 @@ else:
 ```
 ## Задание №3. Определение знака зодиака.
 ```python3
+import time
+
+
 month = input('Введите месяц рождения, например "Январь". :')
 day = int(input('Введите дату рождения, например "31". :'))
+
 if month == 'Январь' or month == 'январь':
-    if 20 <= day:
+    if 20 <= day <= 31:
         print('Водолей')
-    else:
+    elif 1 <= day <= 19:
         print('Козерог')
-if month == 'Февраль' or month == 'февраль':
-    if 20 <= day:
+elif month == 'Февраль' or month == 'февраль':
+    if 20 <= day <= 29:
         print('Рыбы')
-    else:
+    elif 1 <= day <= 19:
         print('Водолей')
-if month == 'Март' or month == 'март':
-    if 21 <= day:
+    elif day > 29:
+        if str(day)[1] == '2' or str(day)[1] == '3' or str(day)[1] == '4':
+            print('В', (month + 'е'), 'не', day, 'дня!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+        elif str(day)[1] == '5' or str(day)[1] == '6' or str(day)[1] == '7' \
+                or str(day)[1] == '8' or str(day)[1] == '9' or str(day)[1] == '0':
+            print('В', (month + 'е'), 'не', day, 'дней!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+elif month == 'Март' or month == 'март':
+    if 21 <= day <= 31:
         print('Овен')
-    else:
+    elif 1 <= day <= 20:
         print('Рыбы')
-if month == 'Апрель' or month == 'апрель':
-    if 20 <= day:
+elif month == 'Апрель' or month == 'апрель':
+    if 20 <= day <= 30:
         print('Телец')
-    else:
+    elif 1 <= day <= 19:
         print('Овен')
-if month == 'Май' or month == 'май':
-    if 21 <= day:
+    elif day > 30:
+        if str(day)[1] == '2' or str(day)[1] == '3' or str(day)[1] == '4':
+            print('В', (month + 'е'), 'не', day, 'дня!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+        elif str(day)[1] == '5' or str(day)[1] == '6' or str(day)[1] == '7' \
+                or str(day)[1] == '8' or str(day)[1] == '9' or str(day)[1] == '0':
+            print('В', (month + 'е'), 'не', day, 'дней!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+elif month == 'Май' or month == 'май':
+    if 21 <= day <= 31:
         print('Близнецы')
-    else:
+    elif 1 <= day <= 20:
         print('Телец')
-if month == 'Июнь' or month == 'июнь':
-    if 21 <= day:
+elif month == 'Июнь' or month == 'июнь':
+    if 21 <= day <= 30:
         print('Рак')
-    else:
+    elif 1 <= day <= 20:
         print('Близнецы')
-if month == 'Июль' or month == 'июль':
-    if 23 <= day:
+    elif day > 30:
+        if str(day)[1] == '2' or str(day)[1] == '3' or str(day)[1] == '4':
+            print('В', (month + 'е'), 'не', day, 'дня!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+        elif str(day)[1] == '5' or str(day)[1] == '6' or str(day)[1] == '7' \
+                or str(day)[1] == '8' or str(day)[1] == '9' or str(day)[1] == '0':
+            print('В', (month + 'е'), 'не', day, 'дней!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+elif month == 'Июль' or month == 'июль':
+    if 23 <= day <= 31:
         print('Лев')
-    else:
+    elif 1 <= day <= 22:
         print('Рак')
-if month == 'Август' or month == 'август':
-    if 23 <= day:
+elif month == 'Август' or month == 'август':
+    if 23 <= day <= 31:
         print('Дева')
-    else:
+    elif 1 <= day <= 22:
         print('Лев')
-if month == 'Сентябрь' or month == 'сентябрь':
-    if 23 <= day:
+elif month == 'Сентябрь' or month == 'сентябрь':
+    if 23 <= day <= 30:
         print('Весы')
-    else:
+    elif 1 <= day <= 22:
         print('Дева')
-if month == 'Октябрь' or month == 'октябрь':
-    if 24 <= day:
+    elif day > 30:
+        if str(day)[1] == '2' or str(day)[1] == '3' or str(day)[1] == '4':
+            print('В', (month + 'е'), 'не', day, 'дня!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+        elif str(day)[1] == '5' or str(day)[1] == '6' or str(day)[1] == '7' \
+                or str(day)[1] == '8' or str(day)[1] == '9' or str(day)[1] == '0':
+            print('В', (month + 'е'), 'не', day, 'дней!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+elif month == 'Октябрь' or month == 'октябрь':
+    if 24 <= day <= 31:
         print('Скорпион')
-    else:
+    elif 1 <= day <= 23:
         print('Весы')
-if month == 'Ноябрь' or month == 'ноябрь':
-    if 23 <= day:
+elif month == 'Ноябрь' or month == 'ноябрь':
+    if 23 <= day <= 30:
         print('Стрелец')
-    else:
+    elif 1 <= day <= 22:
         print('Скорпион')
-if month == 'Декабрь' or month == 'декабрь':
-    if 21 <= day:
+    elif day > 30:
+        if str(day)[1] == '2' or str(day)[1] == '3' or str(day)[1] == '4':
+            print('В', (month + 'е'), 'не', day, 'дня!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+        elif str(day)[1] == '5' or str(day)[1] == '6' or str(day)[1] == '7' \
+                or str(day)[1] == '8' or str(day)[1] == '9' or str(day)[1] == '0':
+            print('В', (month + 'е'), 'не', day, 'дней!')
+            time.sleep(2)
+            print('Запускай заново!')
+            time.sleep(4)
+            print('Чего ждем?')
+            time.sleep(5)
+            print('...')
+elif month == 'Декабрь' or month == 'декабрь':
+    if 21 <= day <= 31:
         print('Козерог')
-    else:
+    elif 1 <= day <= 20:
         print('Стрелец')
+elif 0 > day:
+    print('Отрицательный день?')
+    time.sleep(2)
+    print('Вы из прошлого...?)')
+    time.sleep(2)
+    print('Запускай заново!')
+    time.sleep(4)
+    print('Чего ждем?')
+    time.sleep(5)
+    print('...')
+elif day > 31:
+    if str(day)[1] == '2' or str(day)[1] == '3' or str(day)[1] == '4':
+        print('В', (month + 'е'), 'не', day, 'дня!')
+        time.sleep(2)
+        print('Запускай заново!')
+        time.sleep(4)
+        print('Чего ждем?')
+        time.sleep(5)
+        print('...')
+    elif str(day)[1] == '5' or str(day)[1] == '6' or str(day)[1] == '7'\
+            or str(day)[1] == '8' or str(day)[1] == '9' or str(day)[1] == '0':
+        print('В', (month + 'е'), 'не', day, 'дней!')
+        time.sleep(2)
+        print('Запускай заново!')
+        time.sleep(4)
+        print('Чего ждем?')
+        time.sleep(5)
+        print('...')
+    else:
+        print('В', (month + 'е'), 'не', day, 'день!')
+        time.sleep(2)
+        print('Запускай заново!')
+        time.sleep(4)
+        print('Чего ждем?')
+        time.sleep(5)
+        print('...')
+else:
+    print('Плохо, когда не знаешь название месяцов...')
+    time.sleep(2)
+    print('Перезапускай и давай по новой')
+    time.sleep(3)
+    print('У тебя получится!')
+    time.sleep(5)
+    print('ну же...')
+time.sleep(30)
 
 ```
