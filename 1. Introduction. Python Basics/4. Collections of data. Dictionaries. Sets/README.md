@@ -132,7 +132,6 @@ geo_logs_russia = []
 for geo in geo_logs:
     for key, value in geo.items():
         if 'Россия' in value:
-            print(f"{key} ! {value}")
             geo_logs_russia.append({key: value})
 
 print(geo_logs_russia)
@@ -141,7 +140,15 @@ print(geo_logs_russia)
 ### Задача №2
 #### Выведите на экран все уникальные гео-ID из значений словаря ids. Т.е. список вида [213, 15, 54, 119, 98, 35]
 ```python3
+ids = {'user1': [213, 213, 213, 15, 213],
+       'user2': [54, 54, 119, 119, 119],
+       'user3': [213, 98, 98, 35]}
+ids_list_sum = []
 
+for one in list(ids.values()):
+    ids_list_sum += one
+ids_sum = set(ids_list_sum)
+print(ids_sum)
 
 ```
 ### Задача №3
