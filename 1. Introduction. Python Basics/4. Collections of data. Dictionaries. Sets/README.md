@@ -186,7 +186,18 @@ print(how_much_percent)
 ### Задача №4
 #### Дана статистика рекламных каналов по объемам продаж. Напишите скрипт, который возвращает название канала с максимальным объемом. Т.е. в данном примере скрипт должен возвращать 'yandex'.
 ```python3
+stats = {'facebook': 55, 'yandex': 120, 'vk': 115, 'google': 999, 'email': 42, 'ok': 98}
+leader = 0
+channel = []
 
+for key_1, value_1 in enumerate(stats):
+    leader1 = int(stats[value_1])
+    key_1 = value_1
+    if leader1 > leader:
+        leader = leader1
+        channel = key_1
+
+print(f"Наибольшее число продаж ({leader}) у '{channel}'")
 
 ```
 ### Задача №5
