@@ -192,10 +192,10 @@ channel = []
 
 for key_1, value_1 in enumerate(stats):
     leader1 = int(stats[value_1])
-    key_1 = value_1
+    key_21 = value_1
     if leader1 > leader:
         leader = leader1
-        channel = key_1
+        channel = key_21
 
 print(f"Наибольшее число продаж ({leader}) у '{channel}'")
 
@@ -203,6 +203,14 @@ print(f"Наибольшее число продаж ({leader}) у '{channel}'")
 ### Задача №5
 #### *Напишите код для преобразования произвольного списка вида ['2018-01-01', 'yandex', 'cpc', 100] (он может быть любой длины) в словарь {'2018-01-01': {'yandex': {'cpc': 100}}}
 ```python3
+list_1 = ['2018-01-01', 'yandex', 'cpc', 100]
 
+dict_1 = list_1[-1]
+
+for dict_2 in list_1[-2::-1]:
+    dict_3 = {dict_2: dict_1}
+    dict_1 = dict_3
+
+print(dict_1)
 
 ```
