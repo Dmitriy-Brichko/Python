@@ -124,7 +124,48 @@ print(bruce.weapons)
 ```
 #### Инициализация класса
 ````python3
+class Character:
+    def __init__(self, name, gender, height=0, weight=0, hands=2):
+        self.name = name
+        self.gender = gender
+        self.height = height
+        self.weight = weight
+        self.hands = hands
+        self.weapon = []  # Параметром по умолчанию не будет. Он для конкретного экземпляра.
 
+    def eat(self, food):
+        self.weight += food
+
+    def do_exercise(self, hours):
+        self.weight -= hours * 0.2
+
+    def change_alias(self, new_alias):
+        # print(self)  # Просто смотрим, для чего тут self
+        self.alias = new_alias
+
+
+peter = Character("Peter", "m", height=175)  # name, gender - обязательные!
+bruce = Character("Bruce Wayne", "m")
+print(peter.height)
+print(bruce. hands)
+print(peter.__dict__)  # Все атрибуты попали в словарь из-за __init__
+
+num_1 = 5
+num_2 = 10
+print(num_1 + num_2)
+num_1.__add__(num_2)  # Это то же самое, что и num_1 + num_2. (__add__ = +)
+
+
+def beat_up(self, foe):  # foe - враг
+    if not isinstance(foe, Character):  # Проверяем, является ли враг представителем класса Character.
+        return
+    foe.status = "defeated"  # У врага присваивается статус defeated
+    self.status = "winner"  # У персонажа winner
+
+
+beat_up(bruce, peter)
+print(bruce.status)
+print(peter.status)
 
 ````
 
