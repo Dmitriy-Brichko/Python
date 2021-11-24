@@ -49,6 +49,8 @@ def add_document_in_documents_and_directories():
     while True:
         x = str(input("Введите номер полки. :"))
         if x not in directories:
+            print()
+            print("Такой полки не существует.")
             if input("Создать новую полку? :").capitalize() == "Yes":
                 number = 1
                 while number >= 1:
